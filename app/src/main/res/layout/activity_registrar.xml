@@ -55,13 +55,13 @@
         app:layout_constraintVertical_bias="0.825" />
 
     <EditText
-        android:id="@+id/editTextTextPostalAddress3"
+        android:id="@+id/editTextNumber"
         android:layout_width="315dp"
         android:layout_height="59dp"
         android:background="@drawable/rectangle3"
         android:ems="10"
         android:hint="Stock"
-        android:inputType="textPostalAddress"
+        android:inputType="number"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textAlignment="textStart"
@@ -85,13 +85,13 @@
         app:srcCompat="@drawable/logounion2" />
 
     <EditText
-        android:id="@+id/editTextTextPostalAddress4"
+        android:id="@+id/editTextTextPersonName1"
         android:layout_width="315dp"
         android:layout_height="59dp"
         android:background="@drawable/rectangle3"
         android:ems="10"
         android:hint="Categoria"
-        android:inputType="textPostalAddress"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textAlignment="textStart"
@@ -104,13 +104,13 @@
         app:layout_constraintVertical_bias="0.594" />
 
     <EditText
-        android:id="@+id/editTextTextPostalAddress"
+        android:id="@+id/editTextTextPersonName"
         android:layout_width="315dp"
         android:layout_height="59dp"
         android:background="@drawable/rectangle3"
         android:ems="10"
         android:hint="Nombre del producto"
-        android:inputType="textPostalAddress"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textAlignment="textStart"
@@ -139,13 +139,13 @@
         app:layout_constraintVertical_bias="0.731" />
 
     <EditText
-        android:id="@+id/editTextTextPostalAddress2"
+        android:id="@+id/editTextNumberDecimal"
         android:layout_width="315dp"
         android:layout_height="59dp"
         android:background="@drawable/rectangle3"
         android:ems="10"
         android:hint="Precio S/."
-        android:inputType="textPostalAddress"
+        android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:padding="10dp"
         android:textAlignment="textStart"

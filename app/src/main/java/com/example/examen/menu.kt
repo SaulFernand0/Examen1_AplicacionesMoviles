@@ -5,16 +5,24 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
 
 class menu : AppCompatActivity() {
+
+    lateinit var button3: Button
+    lateinit var button7: Button
+    lateinit var button9: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        var sharedPreferences = getSharedPreferences("preferens", Context.MODE_PRIVATE)
-        var button3: Button = findViewById(R.id.button3)
-        var button7: Button = findViewById(R.id.button7)
-        var button9: Button = findViewById(R.id.button9)
+        button3 = findViewById(R.id.button3)
+        button7 = findViewById(R.id.button7)
+        button9 = findViewById(R.id.button9)
+
+        var sharedPreferences = getSharedPreferences("recordar", MODE_PRIVATE)
+        //FirebaseAuth.getInstance().signInWithEmailAndPassword(sharedPreferences.getString("email")!!, sharedPreferences.getString("password")!!)
 
         button3.setOnClickListener {
             startActivity(Intent(this,listar::class.java))
@@ -25,9 +33,6 @@ class menu : AppCompatActivity() {
         }
 
         button9.setOnClickListener {
-            var edit = sharedPreferences.edit()
-            edit.putBoolean("recordar", false)
-            edit.apply()
             startActivity(Intent(this,MainActivity::class.java))
         }
     }

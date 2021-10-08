@@ -20,4 +20,9 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="delete_dialog">¿Eliminar Producto?</string>
+    <string name="accept">Si</string>
+    <string name="decline">No</string>
+
 </resources>
